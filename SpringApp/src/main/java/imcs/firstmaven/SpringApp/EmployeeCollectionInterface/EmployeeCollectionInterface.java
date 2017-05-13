@@ -18,12 +18,4 @@ public interface EmployeeCollectionInterface {
 
     boolean updateEmployee(Employee employee) throws InvalidSalaryException, EmployeeCreationException;
 
-    double displayHRA(int empId);
-
-    Double calculateGrossSal(int empId);
-
-	List<Employee> SortByName();
-
-	List<Employee> sortBySalary();
-
 }

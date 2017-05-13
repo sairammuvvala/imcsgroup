@@ -107,7 +107,7 @@ public class EmployeeCollectionImplementation implements EmployeeCollectionInter
 	        employees.set(index, employee);
 	        return flag;
 	    }
-	    public double displayHRA(int empId) {
+	    /*public double displayHRA(int empId) {
 	        double hra = 0;
 	        for (Employee employee: employees) {
 	            if (employee.getId() == empId) {
@@ -159,5 +159,5 @@ public class EmployeeCollectionImplementation implements EmployeeCollectionInter
 				}
 			}
 			return count;
-		}
+		}*/
 }

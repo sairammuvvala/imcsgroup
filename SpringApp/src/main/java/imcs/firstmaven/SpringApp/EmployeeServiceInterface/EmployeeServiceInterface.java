@@ -18,4 +18,6 @@ public interface EmployeeServiceInterface {
 
     boolean updateEmployee(Employee employee) throws InvalidSalaryException, EmployeeCreationException;
 
+	
+
 }

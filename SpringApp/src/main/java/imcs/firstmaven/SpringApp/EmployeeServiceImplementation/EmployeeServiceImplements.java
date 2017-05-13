@@ -19,8 +19,16 @@ public class EmployeeServiceImplements implements EmployeeServiceInterface {
 	       
 	    }
 
-		public void createEmployee(Employee employee) throws EmployeeCreationException, InvalidSalaryException {
-			 validateData(employee);
+		public void createEmployee(Employee employee) {
+			 try {
+				validateData(employee);
+			} catch (EmployeeCreationException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			} catch (InvalidSalaryException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			
 	        
 			employees.add(employee);
@@ -96,7 +104,7 @@ public class EmployeeServiceImplements implements EmployeeServiceInterface {
 	        employees.set(index, employee);
 	        return flag;
 	    }
-	    public double displayHRA(int empId) {
+	   /* public double displayHRA(int empId) {
 	        double hra = 0;
 	        for (Employee employee: employees) {
 	            if (employee.getId() == empId) {
@@ -106,6 +114,6 @@ public class EmployeeServiceImplements implements EmployeeServiceInterface {
 	        }
 
 	        return hra;
-	    }
+	    }*/
 
 }
