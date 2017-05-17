@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.example.org/Student"
+	xmlns:tns="http://www.example.org/Student"
+	elementFormDefault="qualified"
+	xmlns:pref="http://www.example.org/Address" xmlns:pref1="http://www.example.org/Marks">
+
+
+
+
+
+
+
+
+    <import schemaLocation="Address.xsd"
+		namespace="http://www.example.org/Address">
+	</import>
+	<import schemaLocation="Marks.xsd" namespace="http://www.example.org/Marks"></import>
+	<element name="Student" type="tns:Student"></element>
+
+	<complexType name="Student">
+		<sequence>
+			<element name="StudentId" type="int" maxOccurs="1" minOccurs="1"></element>
+			<element name="StudentFirstName" type="string" maxOccurs="1" minOccurs="1"></element>
+			<element name="StudentLastName" type="string" maxOccurs="1" minOccurs="1"></element>
+			<element name="StudentAddress" type="pref:Address" maxOccurs="unbounded" minOccurs="1"></element>
+			<element name="StudentMarks" type="pref1:Marks" maxOccurs="unbounded" minOccurs="1"></element>
+		</sequence>
+	</complexType>
+
+
+
+
+</schema>

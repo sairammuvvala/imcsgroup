@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:Student xmlns:tns="http://www.example.org/Student" xmlns:tns1="http://www.example.org/Address" xmlns:tns2="http://www.example.org/Marks" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Student ../xsd/Student.xsd ">
+  <tns:StudentId>0</tns:StudentId>
+  <tns:StudentFirstName>tns:StudentFirstName</tns:StudentFirstName>
+  <tns:StudentLastName>tns:StudentLastName</tns:StudentLastName>
+  <tns:StudentAddress>
+    <tns1:StreetNo>0</tns1:StreetNo>
+    <tns1:StreetName>tns1:StreetName</tns1:StreetName>
+    <tns1:Zipcode>tns1:Zipcode</tns1:Zipcode>
+  </tns:StudentAddress>
+  <tns:StudentMarks>
+    <tns2:Subject>tns2:Subject</tns2:Subject>
+    <tns2:Marks>0</tns2:Marks>
+    <tns2:MaxMarks>0</tns2:MaxMarks>
+  </tns:StudentMarks>
+</tns:Student>
