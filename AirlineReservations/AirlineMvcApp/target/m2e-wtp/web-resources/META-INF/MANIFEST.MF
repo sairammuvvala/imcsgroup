@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Implementation-Title: AirlineMvcApp Maven Webapp
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: sairam
+Implementation-Vendor-Id: imcs.assign
+Build-Jdk: 1.8.0_131
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
